@@ -29,33 +29,43 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.TxtBxName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(891, 414);
+            this.button1.Location = new System.Drawing.Point(916, 451);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Hello";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // TxtBxName
+            // 
+            this.TxtBxName.Location = new System.Drawing.Point(916, 79);
+            this.TxtBxName.Name = "TxtBxName";
+            this.TxtBxName.Size = new System.Drawing.Size(100, 20);
+            this.TxtBxName.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1191, 613);
+            this.Controls.Add(this.TxtBxName);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox TxtBxName;
     }
 }
 
